@@ -44,4 +44,4 @@ The **BotW/TotK Compendium** is a web application that provides information abou
 
 - [Code Sandbox Link](https://codesandbox.io/p/sandbox/api-project-r6jj7y) - Project code.
 - [Project Website Link](https://r6jj7y.csb.app/) - Website.
-- [GitHub Repo Link](https://github.com/DabSquadLeader/loz-botw-totk-api-compendium) - Website.
+- [GitHub Repo Link](https://github.com/DabSquadLeader/loz-botw-totk-api-compendium) - GitHub Repo.
