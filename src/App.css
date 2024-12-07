@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  background-image: url("background3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: rgb(255, 255, 255);
+  display: grid;
+  justify-content: center;
+  position: relative;
+  grid-template-columns: 1fr; /* Single column layout for body */
+  grid-template-rows: auto; /* Automatically adjust rows based on content */
+}
+
+@font-face {
+  font-family: Hylia;
+  src: url(HyliaSerif.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: TriforceSerif;
+  src: url(TriforceSerif.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: LegendSerif;
+  src: url(LegendSerif.ttf) format("truetype");
+}
+
+.App {
+  font-family: sans-serif;
+  line-height: 1.8;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  grid-template-rows: auto; /* Auto height based on content */
+  justify-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#title {
+  font-family: Hylia, sans-serif;
+  text-shadow: 1.5px 1.5px 15px rgb(255, 255, 29), 1px 1px 8px rgb(124, 133, 23);
+  margin-bottom: 20px;
+  font-size: 5rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#chooseText {
+  font-family: TriforceSerif, sans-serif;
+  text-shadow: 1.5px 1.5px 10px rgb(29, 232, 255), 1px 1px 4px rgb(73, 130, 136);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#game-select {
+  font-family: TriforceSerif, sans-serif;
+  font-size: 1.5rem;
+  color: green;
+  margin-bottom: 20px;
+}
+
+div {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+select {
+  font-size: 1.5rem;
+  padding: 2px;
+  border: 2px solid #38a92e;
+  border-radius: 5px;
+  background-color: #ecf5cf;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #e6d417;
+  outline: none;
+}
+
+#entryBox {
+  font-family: TriforceSerif;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  background-color: rgb(230, 245, 207);
+  outline-color: green;
+}
+
+#search {
+  font-family: TriforceSerif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background-color: rgb(230, 245, 207);
+  outline-color: green;
+  color: black;
+}
+
+#music {
+  font-family: LegendSerif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background-color: rgb(230, 245, 207);
+  outline-color: green;
+  color: black;
+  font-weight: bold;
+}
+
+#entryImage {
+  outline-style: ridge;
+  color: rgb(99, 193, 241);
+  outline-width: 0.35rem;
+  margin-bottom: 20px;
+  min-height: 70vh;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 2px;
+}
+
+h2,
+h3 {
+  font-family: Hylia, sans-serif;
+  color: rgb(218, 243, 255);
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 3.5px rgb(0, 79, 89), 1px 1px 4px rgb(0, 31, 46),
+    0px 0px 3px rgb(49, 214, 255);
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1.25rem;
+  color: rgb(216, 253, 224);
+  font-family: LegendSerif;
+  text-shadow: 1px 1px 3.5px rgb(0, 0, 0), 0px 0px 3.5px rgb(121, 255, 49),
+    1px 1px 3.5px rgb(0, 0, 0);
+  padding: 1px;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+p {
+  font-family: LegendSerif, sans-serif;
+  color: rgb(216, 253, 224);
+  font-size: 1.45rem;
+  text-shadow: 0.5px 0.5px 3.5px rgb(0, 0, 0), 0px 0px 3.5px rgb(121, 255, 49),
+    0.5px 0.5px 3.5px rgb(0, 0, 0);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
+  margin-bottom: 15px;
+  max-width: 600px;
+  font-weight: bold;
+}
+
+#notFound {
+  font-family: LegendSerif, sans-serif;
+  color: white;
+  font-size: 1.05rem;
+  text-shadow: 1px 1px 3.5px rgb(97, 0, 0), 1px 1px 4px rgb(46, 0, 0),
+    0px 0px 2.5px rgb(255, 0, 0);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: TriforceSerif;
+  font-weight: bold;
+}
+
+@media (max-width: 828px) {
+  #entryImage {
+    margin-bottom: 20px;
+    min-height: 1vh;
+    width: 45vh;
+  }
+
+  p {
+    text-shadow: 0.5px 0.5px 3.5px rgb(84, 118, 83),
+      0px 0px 3.5px rgb(121, 255, 49);
+    font-size: 1rem;
+  }
+
+  li {
+    text-shadow: 0.5px 0.5px 3.5px rgb(84, 118, 83),
+      0px 0px 3.5px rgb(121, 255, 49);
+  }
+
+  #title {
+    font-size: 3.3rem;
+  }
+}
